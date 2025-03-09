@@ -1,0 +1,60 @@
+{
+  "format": "custom",
+  "id": "minha_pagina",
+  "label": "Minha Página",
+  "repeatable": false,
+  "status": true,
+  "json": {
+    "Main": {
+      "titulo_principal": {
+        "type": "Text",
+        "config": {
+          "label": "Título Principal",
+          "placeholder": ""
+        }
+      },
+      "texto_descritivo": {
+        "type": "StructuredText",
+        "config": {
+          "label": "Texto descritivo",
+          "placeholder": "",
+          "allowTargetBlank": true,
+          "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+        }
+      },
+      "meus_textos": {
+        "type": "Group",
+        "config": {
+          "label": "Meus textos",
+          "repeat": true,
+          "fields": {
+            "titulo": {
+              "type": "Text",
+              "config": {
+                "label": "Título",
+                "placeholder": ""
+              }
+            },
+            "texto": {
+              "type": "StructuredText",
+              "config": {
+                "label": "Texto",
+                "placeholder": "",
+                "allowTargetBlank": true,
+                "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+              }
+            },
+            "imagem": {
+              "type": "Image",
+              "config": {
+                "label": "Imagem",
+                "constraint": {},
+                "thumbnails": []
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

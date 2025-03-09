@@ -1,0 +1,10 @@
+* {
+  font-family: 'Delius', cursive;
+  color: white;
+}
+
+pre {
+  @apply text-white max-w-xl;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
